@@ -89,8 +89,8 @@ const Main: React.FC = () => {
           </div>
         </div>
       </section>
-      <section id="features_3 feature_3_side_shape">
-      <Image src="/assets/icons/shape_c.svg" alt="Feature image" layout='fill' objectFit='cover' />
+      <section id="features_3">
+      <Image src="/assets/icons/shape_c.svg" alt="Feature image"  className="feature_3_side_shape" layout="fill" objectFit="cover" />
       <div className="feature_3_container">
         <div className="feature_3_wrap">
           <div className="feature_desc visible-image">
