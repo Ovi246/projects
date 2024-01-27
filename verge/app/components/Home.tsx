@@ -21,7 +21,7 @@ const Main: React.FC = () => {
                   target.style.opacity = "0";
               }
           });
-      }, { threshold: 0.2 }); // Adjust the threshold as needed
+      }, { threshold: 0.2 }); 
 
       if (imagesRef.current) {
           imagesRef.current.forEach((image) => {
@@ -37,7 +37,26 @@ const Main: React.FC = () => {
               });
           }
       };
-  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+  }, []); 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const rotation = "rotate(" + scrollY + "deg)";
+      const logo = document.getElementById("verge_logo");
+      if (logo) {
+        logo.style.transform = rotation;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
+  
   return (
     <main>
       <section id="verge_desc">
@@ -53,7 +72,7 @@ const Main: React.FC = () => {
             <div className="col-md-10">
               <div className="description text-center">
                 <p>Verge is the <span>ultimate ice-breaker</span> in your favorite bars, clubs and events, removing the
-                  guesswork from <span>who`&apos`s available to talk</span> and who shares your <span>interests</span>.</p>
+                  guesswork from <span>who&apos;s available to talk</span> and who shares your <span>interests</span>.</p>
               </div>
             </div>
           </div>
