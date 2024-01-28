@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
             </Link>
             <div className="policy_links">
-              <p><Link href="terms-condition.html">Terms & Conditions</Link> | <Link href="privacy-ploicy.html"> Privacy Policy</Link></p>
+              <p><Link href="/terms-condition">Terms & Conditions</Link> | <Link href="/privacy-policy"> Privacy Policy</Link></p>
             </div>
           </div>
         </div>
