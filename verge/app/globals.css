@@ -370,8 +370,9 @@ img.feature_3_side_shape {
     max-width: 40%;
 }
 
-.feature_3_wrap .feature_img img {
-    width: 92%;
+section#hero_area_wrap {
+    width: 100%;
+    height: 100vh;
 }
 
 .feature_3_wrap .feature_img {

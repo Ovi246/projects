@@ -39,15 +39,27 @@ const Header: React.FC = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <Link className="navbar-brand" href="/">
-              
-                <img
+              <div className="img_lg">
+
+                <Image
                   src="/assets/icons/verge.svg"
                   alt=""
-                  className="img-fluid img_lg"
+                  className="img-fluid "
+                  width={224}
+                  height={48}
                 />
-         
-              
-                <img src="/assets/logo.png" alt="" className="img-fluid img_sm" />
+              </div>
+        
+              <div className="img_sm">
+
+                <Image 
+                  src="/assets/logo.png" 
+                  alt="" 
+                  className="img-fluid" 
+                  width={37}
+                  height={37}
+                />
+              </div>
               
             </Link>
             {/* <!-- responsive bars icon  --> */}

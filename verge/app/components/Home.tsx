@@ -65,13 +65,24 @@ const Home: React.FC = () => {
 
         <div className="images">
           <div className="hero_shape_shadow">
-            <img src="/assets/shape.png" className="" alt="" />
+            <Image src="/assets/shape.png" alt="" width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto"/>
           </div>
           <div className="right_images">
-            <img src="/assets/hero_b.png"  alt="" />
+            <Image src="/assets/hero_b.png"  alt="" 
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto"
+                />
           </div>
           <div className="left_images">
-            <img src="/assets/hero_a.png" className="img-fluid " alt="" />
+            <Image src="/assets/hero_a.png" className="img-fluid w-full h-auto" 
+                width={0}
+                height={0}
+                sizes="100vw" alt="" />
           </div>
         </div>
         <div className="hero_content">
@@ -147,7 +158,9 @@ const Home: React.FC = () => {
                 with the touch of a few buttons.</p>
             </div>
             <div className="feature_img">
-              <img src="/assets/feature_one.png" alt="Feature image" className="img-fluid visible-image" />
+              <Image src="/assets/feature_one.png" alt="Feature image" className="img-fluid visible-image" width={650}
+                height={770}
+               />
             </div>
           </div>
         </div>
@@ -169,7 +182,11 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section id="features_3">
-      <img src="/assets/icons/shape_c.svg" alt="Feature image"  className="feature_3_side_shape" />
+      <Image src="/assets/icons/shape_c.svg" alt="Feature image"  className="feature_3_side_shape w-full h-auto" 
+                width={0}
+                height={0}
+                sizes="100vw"
+                />
       <div className="feature_3_container">
         <div className="feature_3_wrap">
           <div className="feature_desc visible-image">
@@ -179,7 +196,10 @@ const Home: React.FC = () => {
               something more!</p>
           </div>
           <div className="feature_img">
-          <Image src="/assets/feature_three.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image" />
+          <Image src="/assets/feature_three.png" alt="Feature image" className="img-fluid visible-image " 
+          width={761} 
+          height={839} 
+           />
           </div>
         </div>
 
@@ -189,7 +209,7 @@ const Home: React.FC = () => {
       <div className="feature_4_container">
         <div className="feature_4_wrap">
           <div className="feature_img">
-          <Image src="/assets/feature_four.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image" />
+          <Image src="/assets/feature_four.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image"  />
 
           </div>
           <div className="feature_desc visible-image">
