@@ -147,7 +147,7 @@ const Home: React.FC = () => {
                 with the touch of a few buttons.</p>
             </div>
             <div className="feature_img">
-              <Image src="/assets/feature_one.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image" />
+              <img src="/assets/feature_one.png" alt="Feature image" className="img-fluid visible-image" />
             </div>
           </div>
         </div>
@@ -156,7 +156,8 @@ const Home: React.FC = () => {
         <div className="feature_2_container">
           <div className="feature_2_wrap">
           <div className="feature_img">
-              <Image src="/assets/feature_two_desktop.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image" />
+              <Image src="/assets/feature_two_desktop.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image desktop_view" />
+              <Image src="/assets/feature_two_mobile.png" alt="Feature image" width={500} height={300} className="img-fluid visible-image mobile_view"/>
             </div>
             <div className="feature_desc visible-image" >
               <span>Feature 2</span>

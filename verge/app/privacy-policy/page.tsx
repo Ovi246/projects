@@ -1,4 +1,11 @@
+import Head from "next/head";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Verge | Privacy Policy",
+  description: "Produly presents",
+};
 
 const privacy = () => {
   return (

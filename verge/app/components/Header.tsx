@@ -209,10 +209,11 @@ const Header: React.FC = () => {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link"
+                    className="nav-link cursor-pointer"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
                     onClick={hideMenu}
+                    role="button" 
                   >
                     Contact US
                   </a>
@@ -326,6 +327,7 @@ const Header: React.FC = () => {
             {/* <!-- mobile screen menu end --> */}
           </div>
 
+        </nav>
           <div className="contact_popUp">
             {/* <!-- Modal --> */}
             <div
@@ -419,7 +421,6 @@ const Header: React.FC = () => {
               </div>
             </div>
           </div>
-        </nav>
       </header>
     </>
   );

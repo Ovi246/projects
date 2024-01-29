@@ -692,6 +692,7 @@ form.contact_popup_wrap p {
     margin-top: 2rem;
     background: transparent;
     padding: 10px;
+    width: 100%;
 }
 
 label.form-check-label {
