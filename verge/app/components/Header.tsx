@@ -39,16 +39,16 @@ const Header: React.FC = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <Link className="navbar-brand" href="/">
-              <div className="img_lg">
+              
                 <img
                   src="/assets/icons/verge.svg"
                   alt=""
-                  className="img-fluid"
+                  className="img-fluid img_lg"
                 />
-              </div>
-              <div className="img_sm">
-                <img src="/assets/logo.png" alt="" className="img-fluid" />
-              </div>
+         
+              
+                <img src="/assets/logo.png" alt="" className="img-fluid img_sm" />
+              
             </Link>
             {/* <!-- responsive bars icon  --> */}
             <button
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                       x2="30.4375"
                       y2="1.07422"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                     <line
                       id="Line 426"
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                       x2="30.4375"
                       y2="11.0781"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                   </g>
                 </svg>
@@ -375,13 +375,13 @@ const Header: React.FC = () => {
                       <h2>Contact US</h2>
                       <p>Become part of our family!</p>
                       <div className="firstName">
-                        <input type="text" placeholder="First Name" value="" />
+                        <input type="text" placeholder="First Name" defaultValue="" />
                       </div>
                       <div className="lastname">
-                        <input type="text" placeholder="Last Name" value="" />
+                        <input type="text" placeholder="Last Name" defaultValue="" />
                       </div>
                       <div className="email">
-                        <input type="email" placeholder="E-mail" value="" />
+                        <input type="email" placeholder="E-mail" defaultValue="" />
                       </div>
                       <div className="text_box">
                         <textarea

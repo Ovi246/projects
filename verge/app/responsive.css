@@ -89,8 +89,6 @@
   .modal-header button svg { width: 42px; }
   form.contact_popup_wrap p { font-size: 16px; line-height: 19px; }
   .img_sm { display: block;}
-  .img_sm > span {position: initial !important;}
-  .img_sm > span > img {width: 37px !important; height: auto !important; position: initial !important;}
   .img_lg { display: none; }
   a.navbar-brand img { max-width: 37px; }
   .hero_shape_shadow img { width: 100%; height: 118vh; transform: scaleX(-1); }
